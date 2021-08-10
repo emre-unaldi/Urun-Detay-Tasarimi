@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="JQuery/jquery-3.6.0.min.js"></script>
+    <title>Ürün Tanıtım Kartı</title>
+</head>
+<body>
+        <p id="yazdir"></p>
+        <script>
+          var UrunKarti = "";
+          for (let index = 0; index < 20; index++) {
+                UrunKarti += 
+            `
+                <div class="buyukKutu" id="buyukKutu">
+                    <div class="kutu">
+                    
+                        <div class="kutuIc1">
+                            <div class="solUstYazi" ><b>Yeni</b><br>ürün</div>
+                            <img src="resim.jpg" alt="">
+                        </div>
+
+                        <div class="kutuIc2">
+                            <span class="yaziUst">MARAŞ PEYNİR A.Ş.</span><br>
+                            <span class="yaziAlt">Petline Natural CAt Adult Anchovy Food <br> ALTÜRÜNSÜZ</b></span>
+                        
+                        </div>
+
+                        <div class="kutuIc3">
+                            <div class="solAltYazi" ><b>&nbsp&nbsp%95</b><br>&nbspindirim</div>
+                            <div class="solAltYaziSag"><s>1.180,00 TL</s><br><b id="fiyat">54,28 TL</b></div>
+                        </div>
+
+                        <div class="kutuIc4">
+                        <div class="SolAltADiv"">
+                                <div class="link">
+                                    <a href="xxxx" class="SolA">+</a>
+                                    <input class="solAltInput" type="number"  value="1" min="1">
+                                    <a href="xxxx" class="SagA">-</a>
+                                </div>
+                                <div>
+                                <button type="submit" class="sagAltButon" >Sepete ekle</button>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+        `;
+        }
+          document.getElementById("yazdir").innerHTML = UrunKarti;
+        </script>
+</body>
+</html>
